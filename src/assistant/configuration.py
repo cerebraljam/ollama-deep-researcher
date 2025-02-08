@@ -8,15 +8,14 @@ from dataclasses import dataclass
 from enum import Enum
 
 class SearchAPI(Enum):
-    PERPLEXITY = "perplexity"
-    TAVILY = "tavily"
+    ARXIV = "arxiv"
 
 @dataclass(kw_only=True)
 class Configuration:
     """The configurable fields for the research assistant."""
     max_web_research_loops: int = 3
-    local_llm: str = "llama3.2"
-    search_api: SearchAPI = SearchAPI.TAVILY  # Default to TAVILY
+    local_llm: str = "deepseek-r1:8b"
+    search_api: SearchAPI = SearchAPI.ARXIV  # Default to ARXIV
 
     @classmethod
     def from_runnable_config(

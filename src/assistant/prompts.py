@@ -1,4 +1,4 @@
-query_writer_instructions="""Your goal is to generate a targeted web search query.
+query_writer_instructions="""Your goal is to generate a targeted arxiv research query.
 The query will gather information related to a specific topic.
 
 <TOPIC>
@@ -25,7 +25,7 @@ Provide your response in JSON format:"""
 
 summarizer_instructions="""
 <GOAL>
-Generate a high-quality summary of the web search results and keep it concise / related to the user topic.
+Generate a high-quality summary of the research paper results and keep it concise / related to the user topic.
 </GOAL>
 
 <REQUIREMENTS>
