@@ -1,7 +1,7 @@
-# Ollama Deep Researcher
+# Ollama Deep Researcher - Arxiv
 
 UPDATE:
-> This is a fork of (Langchain's excellent example of Deep Researcher using DeepSeek-r1 Locally)[https://github.com/langchain-ai/ollama-deep-researcher]
+> This is a fork of [Langchain's excellent example of Deep Researcher using DeepSeek-r1 Locally](https://github.com/langchain-ai/ollama-deep-researcher)
 > This version has been modified to search on arxiv.org instead of Tavily or Perplexity.
 
 Ollama Deep Researcher is a fully local web research assistant that uses any LLM hosted by [Ollama](https://ollama.com/search). Give it a topic and it will generate a arxiv search query, gather research papers (via [Arxiv.org](https://arxiv.org/) by default), summarize the results of the recovered papers, reflect on the summary to examine knowledge gaps, generate a new search query to address the gaps, search, and improve the summary for a user-defined number of cycles. It will provide the user a final markdown summary with all sources used. 
